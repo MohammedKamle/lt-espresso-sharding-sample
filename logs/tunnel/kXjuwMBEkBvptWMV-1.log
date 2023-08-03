@@ -1,0 +1,38 @@
+{"level":"debug","time":"2023-07-25T14:09:47.626+0530","caller":"ulimit/ulimit.go:35","msg":"File descriptor limit 61440"}
+{"level":"info","time":"2023-07-25T14:09:47.817+0530","caller":"cmd/lt.go:183","msg":"LambdaTest Tunnel version: 3.1.34"}
+{"level":"debug","time":"2023-07-25T14:09:47.817+0530","caller":"core/lifecycle.go:41","msg":"Starting pipeline....."}
+{"level":"debug","time":"2023-07-25T14:09:47.817+0530","caller":"core/lifecycle.go:42","msg":"OS: darwin, Arch: arm64"}
+{"level":"debug","time":"2023-07-25T14:09:47.817+0530","caller":"core/lifecycle.go:43","msg":"Fetching config"}
+{"level":"debug","time":"2023-07-25T14:09:47.817+0530","caller":"core/lifecycle.go:65","msg":"Starting tunnel With flags: --user mobileQA --key ***** --callbackURL http://127.0.0.1:50922/started --env ht-stage --tunnelName kXjuwMBEkBvptWMV --retry-on-failure --infoAPIPort 50923 --logFile /Users/visheshk/Desktop/EspressoSharding/logs/tunnel/kXjuwMBEkBvptWMV-1.log"}
+{"level":"debug","time":"2023-07-25T14:09:50.211+0530","caller":"core/lifecycle.go:83","msg":"Remote config fetched"}
+{"level":"debug","time":"2023-07-25T14:09:50.277+0530","caller":"callback/setup.go:51","msg":"Starting the callback agent"}
+{"level":"debug","time":"2023-07-25T14:09:50.277+0530","caller":"networkscanner/setup.go:97","msg":"Trying on port 443"}
+{"level":"debug","time":"2023-07-25T14:09:50.277+0530","caller":"custom/setup.go:736","msg":"Starting sink proxy"}
+{"level":"debug","time":"2023-07-25T14:09:50.277+0530","caller":"networkscanner/setup.go:131","msg":"Trying over ssh over ws"}
+{"level":"debug","time":"2023-07-25T14:09:50.277+0530","caller":"networkscanner/setup.go:63","msg":"Trying on port 22"}
+{"level":"debug","time":"2023-07-25T14:09:50.277+0530","caller":"apiserver/setup.go:154","msg":"Starting API server"}
+{"level":"debug","time":"2023-07-25T14:09:50.277+0530","caller":"apiserver/setup.go:136","msg":"Starting API server for tunnel info on port: 50923"}
+{"level":"info","time":"2023-07-25T14:09:50.278+0530","caller":"custom/setup.go:683","msg":"Tunnel binary started on port :9090"}
+{"level":"debug","time":"2023-07-25T14:09:51.714+0530","caller":"networkscanner/setup.go:148","msg":"WSS connection was successful"}
+{"level":"debug","time":"2023-07-25T14:09:52.979+0530","caller":"networkscanner/setup.go:118","msg":"SSH connection over port 443 successful"}
+{"level":"debug","time":"2023-07-25T14:09:53.736+0530","caller":"networkscanner/setup.go:173","msg":"SSH connection over ws successful"}
+{"level":"debug","time":"2023-07-25T14:09:53.736+0530","caller":"networkscanner/setup.go:84","msg":"SSH connection over port 22 successful"}
+{"level":"info","time":"2023-07-25T14:09:53.736+0530","caller":"core/lifecycle.go:120","msg":"Using ssh(over_22) :: connection mode"}
+{"level":"info","time":"2023-07-25T14:09:53.736+0530","caller":"core/lifecycle.go:250","msg":"Launching tunnel"}
+{"level":"debug","time":"2023-07-25T14:09:53.737+0530","caller":"ws/control.go:34","msg":"Starting control ws connection at wss://stage-hts.lambdatestinternal.com/monitor"}
+{"level":"debug","time":"2023-07-25T14:09:54.953+0530","caller":"ws/control.go:72","msg":"Control ws channel opened"}
+{"level":"debug","time":"2023-07-25T14:09:54.953+0530","caller":"ws/control.go:131","msg":"Starting message listener on control connection"}
+{"level":"debug","time":"2023-07-25T14:09:54.957+0530","caller":"core/lifecycle.go:322","msg":"Sending tunnel registered message to channels"}
+{"level":"debug","time":"2023-07-25T14:09:54.957+0530","caller":"ws/control.go:196","msg":"Tunnel registered message received on control channel"}
+{"level":"debug","time":"2023-07-25T14:09:54.957+0530","caller":"ssh/setup.go:71","msg":"Using 5 ssh connection"}
+{"level":"debug","time":"2023-07-25T14:09:54.958+0530","caller":"ws/control.go:200","msg":"controller bus registered"}
+{"level":"debug","time":"2023-07-25T14:09:54.960+0530","caller":"callback/setup.go:100","msg":"Webhook endpoint http://127.0.0.1:50922/started successfully notified"}
+{"level":"debug","time":"2023-07-25T14:09:58.115+0530","caller":"ssh/ssh.go:216","msg":"Successfully started sshd listener on port: 29777"}
+{"level":"debug","time":"2023-07-25T14:09:58.220+0530","caller":"ssh/ssh.go:216","msg":"Successfully started sshd listener on port: 26117"}
+{"level":"info","time":"2023-07-25T14:09:58.220+0530","caller":"core/lifecycle.go:336","msg":"You can start testing now"}
+{"level":"info","time":"2023-07-25T14:09:58.220+0530","caller":"core/lifecycle.go:337","msg":"Tunnel ID: 121036"}
+{"level":"debug","time":"2023-07-25T14:09:58.220+0530","caller":"core/lifecycle.go:338","msg":"Remote Listener Started on Port 28596"}
+{"level":"debug","time":"2023-07-25T14:09:58.328+0530","caller":"ssh/ssh.go:216","msg":"Successfully started sshd listener on port: 4956"}
+{"level":"debug","time":"2023-07-25T14:09:58.357+0530","caller":"ssh/ssh.go:216","msg":"Successfully started sshd listener on port: 1745"}
+{"level":"debug","time":"2023-07-25T14:09:58.411+0530","caller":"ssh/ssh.go:216","msg":"Successfully started sshd listener on port: 27522"}
+{"level":"debug","time":"2023-07-25T15:21:16.532+0530","caller":"ws/control.go:140","msg":"Unusual close error on control channel..."}

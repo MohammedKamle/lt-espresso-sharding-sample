@@ -1,0 +1,84 @@
+version: "0.2"
+runson: android
+autosplit: true
+concurrency: 2
+# tunnel: true
+
+framework:
+  name: android/espresso
+  args:
+    # filters:
+    #   attributes:
+    #   - type: class
+    #     values: ["com.lambdatest.proverbial.BrowserTest","com.lambdatest.proverbial.MainActivityTest"]
+      # - type: class
+      #   values: ["com.lambdatest.proverbial.MainActivityTest"]
+      # - type: package
+      #   values: ["com.lambdatest.proverbial"]
+      # - type: annotation
+      #   values: ["com.lambdatest.proverbial.BrowserTest"]
+    # appId: lt://APP1016033751690564397283910
+    # testSuiteAppId: lt://APP1016033751690564399612998
+    testSuitePath: ProverbialExpressoTest.apk
+    appPath: Proverbial.apk
+    deviceSelectionStrategy: all
+    # devices: ["Galaxy.*","Pixel.*","OnePlus.*","Redmi.*"]
+    devices: ["Galaxy.*","Pixel.*"]
+    deviceLog: true
+    buildName: espresso-sharding-sample
+    # privateCloud: true
+    # dedicatedProxy:
+    # geoLocation: "AU"
+    shards:
+      mappings:
+      - name: Shard1
+        strategy: "class"
+        values: ["com.lambdatest.proverbial.BrowserTest"]
+      - name: Shard2
+        strategy: "skipClass"
+        values: ["com.lambdatest.proverbial.BrowserTest"]
+    #   - name: Shard3
+    #     strategy: "skipClass"
+    #     values: ["com.lambdatest.proverbial.BrowserTest"]
+    #   - name: Shard4
+    #     strategy: "skipClass"
+    #     values: ["com.lambdatest.proverbial.BrowserTest"]
+    #   - name: Shard5
+    #     strategy: "skipClass"
+    #     values: ["com.lambdatest.proverbial.BrowserTest"]
+    #   - name: Shard6
+    #     strategy: "skipClass"
+    #     values: ["com.lambdatest.proverbial.BrowserTest"]
+    #   - name: Shard7
+    #     strategy: "skipClass"
+    #     values: ["com.lambdatest.proverbial.BrowserTest"]
+    #   - name: Shard8
+    #     strategy: "skipClass"
+    #     values: ["com.lambdatest.proverbial.BrowserTest"]
+    #   - name: Shard3
+    #     strategy: "skipClass"
+    #     values: ["com.lambdatest.proverbial.BrowserTest"]
+    #   - name: Shard4
+    #     strategy: "skipClass"
+    #     values: ["com.lambdatest.proverbial.BrowserTest"]
+      # - name: Shard9
+      #   strategy: "package"
+      #   values: ["com.lambdatest.proverbial"]
+      # - name: Shard5
+      #   strategy: "package"
+      #   values: ["com.lambdatest.proverbial"]
+      # - name: Shard6
+      #   strategy: "package"
+      #   values: ["com.lambdatest.proverbial"]
+      # - name: Shard7
+      #   strategy: "package"
+      #   values: ["com.lambdatest.proverbial"]
+      # - name: Shard9
+      #   strategy: "skipClass"
+      #   values: ["com.lambdatest.proverbial.MainActivityTest"]
+      # - name: Shard9
+      #   strategy: "skipClass"
+      #   values: ["com.lambdatest.proverbial.MainActivityTest"]
+      # - name: Shard8
+      #   strategy: "skipClass"
+      #   values: ["com.lambdatest.proverbial.MainActivityTest"]

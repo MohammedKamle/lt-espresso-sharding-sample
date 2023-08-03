@@ -1,0 +1,76 @@
+version: "0.2"
+user: mohammadk
+key: rakcBoBYHiy8BW7osVi4N1LGYjgJhRfAwvL1pPUvwCA1wfNChd
+testSuites: []
+preDirectives:
+    commands: []
+    maxRetries: 0
+    shell: ""
+    workingDirectory: ""
+postDirectives:
+    commands: []
+    shell: ""
+    workingDirectory: ""
+runson: android
+autosplit: true
+concurrency: 2
+jobID: 16022624-5c33-407c-b822-19b3cd809f50
+codeDirectory: EspressoSharding
+framework:
+    name: android/espresso
+    flags: []
+    discoveryFlags: []
+    discoveryType: method
+    runnerFlags: []
+    workingDirectory: ""
+    isTestNGXMLSuite: false
+    defaultReports: false
+    args:
+        appPath: Proverbial.apk
+        testSuitePath: ProverbialExpressoTest.apk
+        xcTestPlanPath: ""
+        shards:
+            mappings:
+                - name: Shard1
+                  strategy: class
+                  values:
+                    - com.lambdatest.proverbial.BrowserTest
+                - name: Shard2
+                  strategy: skipClass
+                  values:
+                    - com.lambdatest.proverbial.BrowserTest
+        filters:
+            attributes: []
+        devices:
+            - Galaxy.*
+            - Pixel.*
+        deviceSelectionStrategy: all
+        appId: lt://APP10160361191691047881835811
+        testSuiteAppId: lt://APP10160571901691047883105464
+        xcTestPlanId: ""
+        video: true
+        deviceLog: true
+        buildName: espresso-sharding-sample
+        reducedFilters:
+            class:
+                - com.lambdatest.proverbial.BrowserTest
+            skipClass:
+                - com.lambdatest.proverbial.BrowserTest
+    additional_args: null
+    licenseKey: ""
+    userdefinediscovery: false
+    toscaArgs: null
+    version: ""
+    downloadURL: ""
+cypress: false
+betaFeature:
+    setPartiallyCompletedAsCompleted: false
+testType: android/espresso
+combineTasksInMatrixMode: false
+captureScreenRecordingForScenarios: false
+maxRetriesPreSteps: 0
+triggerMode: true
+sourcePayload:
+    platform: realDevice
+collectLocalGitData: true
+dynamicAllocation: false
